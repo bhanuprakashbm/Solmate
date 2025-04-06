@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/solmate/static/css/main.6c8022d4.css",
+    "main.js": "/solmate/static/js/main.74cca08c.js",
+    "static/js/453.388807c0.chunk.js": "/solmate/static/js/453.388807c0.chunk.js",
+    "index.html": "/solmate/index.html",
+    "main.6c8022d4.css.map": "/solmate/static/css/main.6c8022d4.css.map",
+    "main.74cca08c.js.map": "/solmate/static/js/main.74cca08c.js.map",
+    "453.388807c0.chunk.js.map": "/solmate/static/js/453.388807c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c8022d4.css",
+    "static/js/main.74cca08c.js"
+  ]
+}
