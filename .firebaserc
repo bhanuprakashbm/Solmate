@@ -1,0 +1,21 @@
+{
+  "projects": {
+    "default": "solmate-app"
+  },
+  "targets": {
+    "solmate-app": {
+      "hosting": {
+        "solmate-app": [
+          "solmate-app"
+        ],
+        "solmate-web": [
+          "solmate-web"
+        ],
+        "solmate-bm123": [
+          "solmate-bm123"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
