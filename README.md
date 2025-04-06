@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Solmate - AI-Powered Emotional First-Aid Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Solmate is an AI-powered emotional first-aid platform designed to intercept and support individuals in suicidal distress. Inspired as the reverse of the infamous "Blue Whale" game, Solmate gamifies survival, self-worth, and emotional release.
 
-## Available Scripts
+## Challenge Overview
 
-In the project directory, you can run:
+The Blue Whale challenge led vulnerable people down a 50-day path ending in suicide. Solmate is the antidote: a 50-day journey toward healing and reconnection.
 
-### `npm start`
+Solmate initiates immediate conversation, redirects thoughts, and supports healing — right at the crisis moment. It provides:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Emotionally Intelligent AI Companion (simulating a human psychologist)
+- Guided "Survival Game" with life-affirming tasks
+- Emergency resources and crisis support
+- Coping strategies and grounding techniques
+- Survivor stories for inspiration
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo Prototype Features
 
-### `npm test`
+This prototype demonstrates the following key features:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **AI Chat Interface**: Conversation with an empathetic AI designed to provide emotional support
+2. **Survival Game**: A three-level game that encourages users to complete life-affirming tasks
+3. **Resources**: Helplines, survivor stories, and coping strategies
+4. **Emergency SOS**: Immediate support options including breathing exercises and grounding techniques
 
-### `npm run build`
+## Firebase Integration
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project uses Firebase for backend services:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Firestore Database**: Stores chat messages and game progress
+- **Authentication**: Anonymous session tracking
+- **Cloud Storage**: Potential future use for storing user-generated content
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Data Structure
 
-### `npm run eject`
+```
+firestore/
+  ├── chats/                # Chat conversations
+  │   └── [sessionId]/      # Unique session ID
+  │       └── messages/     # Messages in the conversation
+  │           ├── message1  # Individual message
+  │           ├── message2
+  │           └── ...
+  └── gameProgress/         # User game progress
+      └── [userId]/         # Unique user ID
+          ├── currentLevel  # Current game level
+          ├── completedTasks# Array of completed task IDs
+          ├── createdAt     # First session timestamp
+          └── lastActive    # Last activity timestamp
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
+- Node.js (v14.0.0 or later)
+- npm (v6.0.0 or later)
+- Firebase account (for backend functionality)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository
+```
+git clone https://github.com/yourusername/solmate.git
+cd solmate
+```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Install dependencies
+```
+npm install
+```
